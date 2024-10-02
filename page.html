@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* questo é un commento in CSS */
+      p {
+        color: white;
+        background-color: black;
+      }
+    </style>
+    <link rel="stylesheet" href="/stylesheet/style.css" />
     <title>Pagina esempio CSS</title>
   </head>
   <body>
@@ -14,13 +22,24 @@
         <!-- é un contenitore di blocco che sapara semanticamente il contenuto -->
 
         <p>
-          é importante conoscere tutti i modi per applicare delle regole CSS ad
+          É importante conoscere tutti i modi per applicare delle regole CSS ad
           unm documento HTML
         </p>
+        <p>
+          Questo é un altro paragrafo Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Quisquam itaque debitis, ab dolores quam, laudantium
+          id voluptates suscipit illo dolore explicabo? Asperiores amet eos
+          magnam iusto temporibus autem velit accusamus.
+        </p>
         <ol>
+          <!-- CSS INLINE -->
           <li style="color: green">Stile applicatore inline (obsoleto)</li>
-          <li>Stile applicato tramite un tag style all'interno di head</li>
-          <li>
+          <!-- CSS INCORPORATI -->
+          <li id="secondo-elemento">
+            Stile applicato tramite un tag style all'interno di head
+          </li>
+          <!-- CSS ESTERNI -->
+          <li id="terzo-elemento">
             Stile creato separatamente in un foglio .css e applicato alla pagina
           </li>
         </ol>
